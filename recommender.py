@@ -7,7 +7,7 @@ from fuzzywuzzy import fuzz
 import time
 import datetime
 
-class recommend :
+class Recommend :
     def __init__(self):
         self.orderDetails = self.get_order_details()
         self.browserHistory = self.get_browser_history()
@@ -92,7 +92,7 @@ class recommend :
         product_corr = self.correlation_matrix[product_id]
         recommend_product = []
         for i in range (0,len(product_corr)):
-            recommend_product.append(product_corr[i],i)
+            recommend_product.append([product_corr[i],i])
         recommend_product = sorted(recommend_product,reverse=True)
 
         for i in range (0,10):
@@ -138,7 +138,7 @@ class recommend :
         correlation_matrix = self.calculate_correlation_matrix(user_id)
 
         #search browsing history
-        search_history = self.browseHistory.loc[self.browseHistory['uid'] == user_id]['search'].values.tolist()
+        search_history = self.browserHistory.loc[self.browserHistory['uid'] == user_id]['search'].values.tolist()
         similiar_products =[]
         for browsed_item in search_history:
             for product in self.productList:
@@ -151,7 +151,7 @@ class recommend :
         
         all_products_set = set()
         for product_id in similiar_products:
-            product_corr = self.correlation_matrix[product_id]
+            product_corr = correlation_matrix[product_id]
             recommend_product = []
             for i in range(0,len(product_corr)):
                 recommend_product.append([product_corr[i],i])
