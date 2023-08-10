@@ -98,19 +98,20 @@ class recommend :
         for i in range (0,10):
             print(product_corr[recommend_product[i][1]],self.productList[recommend_product[i][1]])
         return recommend_product
-#     #recommender_instance = Recommender()
 
-#  Define the product ID for which you want to get recommendations
-# product_id = 1  # Replace with the desired product ID
+# #     #recommender_instance = Recommender()
 
-#  Call the getCorrelationMatrix function to compute the correlation matrix
-# correlation_matrix = recommender_instance.getCorrelationMatrix(46)  # Replace user_id with the appropriate user ID
+# #  Define the product ID for which you want to get recommendations
+# # product_id = 1  # Replace with the desired product ID
 
-#  Set the correlationMatrix attribute in the instance
-# recommender_instance.correlationMatrix = correlation_matrix
+# #  Call the getCorrelationMatrix function to compute the correlation matrix
+# # correlation_matrix = recommender_instance.getCorrelationMatrix(46)  # Replace user_id with the appropriate user ID
 
-#  Call the getSingleProductRecommendation function on the instance
-# recommender_instance.getSingleProductRecommendation(1)
+# #  Set the correlationMatrix attribute in the instance
+# # recommender_instance.correlationMatrix = correlation_matrix
+
+# #  Call the getSingleProductRecommendation function on the instance
+# # recommender_instance.getSingleProductRecommendation(1)
 
     def calculate_product_Recommendation(self,user_id):
         correlation_matrix = self.calculate_correlation_matrix(user_id)
@@ -125,21 +126,66 @@ class recommend :
                 similarity = fuzz.token_set_ratio(browsed_item,pname)
                 if similarity > 76:
                     similiar_products.append(pid)
-
-    # Continue tomorrow
-
-
-            
-                                                      
-
-
-
-
         
+        all_products_set = set()
+        for product_id in similiar_products:
+            product_corr = self.correlation_matrix[product_id]
+            recommend_product = []
+            for i in range(0,len(product_corr)):
+                recommend_product.append([product_corr,i])
+            sorted(product_corr,reverse=True)
+
+            for i in range(0,5):
+                all_products_set.add(recommend_product[i])
+            
+            all_product_list = []
+            
+            for index in all_products_set:
+                all_product_list.append(self.productList[index])
+            
+            final_product_set = set()
+            for i in range(0,min(len(all_product_list),10)):
+                randNum = random.randint(0,len(all_product_list)-1)
+                final_product_set.add(randNum)
+            
+            final_product_list = []
+            for index in final_product_set:
+                final_product_list.append(all_product_list[index])
 
 
+            # for checking 
+            for product in final_product_list:
+                print("product = ", product)
+            return final_product_list
+        
+        def calculate_correlation_matrix(self,user_id):
+            price_data = self.correlationData['price'].values.tolist()
+            date_data = self.calculate_data_weight(user_id)
+            name_data = self.correlationData['name'].values.tolist()
+            brand_data = self.correlationData['brand'].values.tolist()
+            user_brand_data = self.calculate_brand_weight(user_id)
 
+            totalData=[price_data,date_data,name_data,brand_data,user_brand_data]
+            index=['price','date','name','brand','userBrandPreference']
+        
+            productXAttributes = pd.DataFrame(data=totalData,index=index,columns=self.products['product_name'].values.tolist())
 
+            productXAttributes = productXAttributes.T
+            productXAttributes = productXAttributes.astype(float)
+            productXAttributes = productXAttributes.dropna()
+            productXAttributes.to_csv("TemporaryMatrix.csv",index=False)
+            print(productXAttributes)
+            print(np.corrcoef(productXAttributes))
 
+            corrcoef = np.corrcoef(productXAttributes)
+            return corrcoef
 
+        # Testing Purpose
+        # def getUserOrderHistory(self,userId):
+        #     orderHistory = self.orderDetails.loc[self.orderDetails['uid'] == userId].values.tolist()
+        #     return orderHistory
     
+        # def getUserBrowseHistory(self,userId):
+        #     browseHistory = self.browserHistory.loc[self.browserHistory['uid'] == userId].values.tolist()
+        #     return browseHistory
+        
