@@ -139,7 +139,7 @@ class Recommend :
 
         #search browsing history
         search_history = self.browserHistory.loc[self.browserHistory['uid'] == user_id]['search'].values.tolist()
-        similiar_products =[]
+        similiar_products = []
         for browsed_item in search_history:
             for product in self.productList:
                 pname = product[1]
@@ -155,29 +155,29 @@ class Recommend :
             recommend_product = []
             for i in range(0,len(product_corr)):
                 recommend_product.append([product_corr[i],i])
-            recommend_product = sorted(product_corr,reverse=True)
+            recommend_product = sorted(recommend_product,reverse=True)
 
-            for i in range(0,5):
+            for i in range(1,3):
                 all_products_set.add(recommend_product[i][1])
             
-            all_product_list = []
-            for index in all_products_set:
-                all_product_list.append(self.productList[index])
+        all_product_list = []
+        for index in all_products_set:
+            all_product_list.append(self.productList[index])
             
-            final_product_set = set()
-            for i in range(0,min(len(all_product_list),10)):
-                randNum = random.randint(0,len(all_product_list)-1)
-                final_product_set.add(randNum)
+        final_product_set = set()
+        for i in range(0,min(len(all_product_list),10)):
+            randNum = random.randint(0,len(all_product_list)-1)
+            final_product_set.add(randNum)
             
-            final_product_list = []
-            for index in final_product_set:
-                final_product_list.append(all_product_list[index])
+        final_product_list = []
+        for index in final_product_set:
+            final_product_list.append(all_product_list[index])
 
 
             # for checking 
-            for product in final_product_list:
-                print("product = ", product)
-            return final_product_list
+        for product in final_product_list:
+            print("product = ", product)
+        return final_product_list
         
 
         # Testing Purpose
