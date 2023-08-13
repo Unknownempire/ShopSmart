@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    height: 60px;
+    background-color:#181433;
+    /* background-color:#2874F0; */
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: center;
+}
+.nav-logo {
+    margin: 0 1rem;
+    width: 105px;
+    height: 50px;
+}
+.logo {
+    /* margin-left: 10px; */
+    background-image: url(../images/flipkart.svg);
+    /* background-image: url(../images/flipkart-icon.svg); */
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    height: 50px;
+    width: 100%;
+    
+}
+
+.border {
+    border: 2px solid transparent;
+}
+.border:hover {
+    border: 0.5px solid white;
+}
+.add-icon {
+    display: flex;
+}
+.add-to {
+  color: #cccccc;  
+  font-size: 0.85rem;
+  margin-left: 15px;
+}
+.add-loc {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+
+/* nav search */
+.nav-address {
+    margin: 0 1rem;
+}
+.nav-search {
+    margin: 0 1rem;
+    display: flex;
+    width: 620px;
+    background-color: pink;
+    justify-content: space-evenly;
+    height:40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color:  #f3f3f3;
+    border: none;
+    width: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+}
+
+.search-input {
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #e2c402;
+    border-top-right-radius:4px ;
+    border-bottom-right-radius:4px ;
+    color: #181433;
+}
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+.nav-signin {
+    margin: 0 1rem;
+    font-size: 0.85rem;
+}
+.create {
+    font-size: 1rem;
+    font-weight: 700;
+}
+a,a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #e2c402;
+}
+
+.nav-cart i{
+    margin: 0 1rem;
+    font-size: 30px;
+    
+}
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+
+/* _________________________________Products-section_____________________________________ */
+
+.products-section {
+    background-color: pink;
+    height: 93vh;
+}
+
+.panel-ops {
+    padding: 2px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.panel-items {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1% 0;
+}

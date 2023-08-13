@@ -1,0 +1,154 @@
+ @import "compass/css3";
+ body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/yellow\ and\ blue\ 1.png');
+    /* background-image: url('images/yellow\ and\ blue\ 1\ \(2\).png'); */
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
+    /* box-shadow: ; */
+    border-radius: 15px;
+    width: 420px;
+    height: 420px;
+    padding: 30px 40px;
+    background: transparent;
+}
+.Login {
+    width:100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.Login input {
+    width: 100%;
+    height: 100%;
+    background : transparent;
+    outline: none;
+    border: 2px solid black;
+    border-radius : 40px;
+    text-indent: 10px;
+}
+
+.Login input ::placeholder {
+    color: #fff;
+}
+
+.show {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 15px;
+}
+.show label input {
+    accent-color: steelblue;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.container .button {
+    width: 100%;
+    height: 45px;
+    background: steelblue;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,-1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.container .register_link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register_link p a {
+    color: red;
+    text-decoration: none;
+    font-weight: 600px;
+}
+.register_link p a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.container-register {
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
+    /* box-shadow: ; */
+    border-radius: 15px;
+    width: 420px;
+    height: 450px;
+    padding: 30px 40px;
+    background: transparent;
+}
+
+.container-register .button {
+    width: 100%;
+    height: 45px;
+    background: steelblue;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,-1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.container-register .register_link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+input[type=password], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+input[type=text]:focus, textarea:focus {
+  /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
+  box-shadow: 0 0 5px steelblue;
+  
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  /* border: 1px solid rgba(81, 203, 238, 1); */
+  border: 1px solid steelblue;
+}
+input[type=password]:focus, textarea:focus {
+  /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
+  box-shadow: 0 0 5px steelblue;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  /* border: 1px solid rgba(81, 203, 238, 1); */
+  border: 1px solid steelblue;
+}
+.button:hover {
+    background:#3a7b97 ;
+}
