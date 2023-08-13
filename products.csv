@@ -1,0 +1,168 @@
+pid,product_name,price,brand
+0,Instant food products,190.0,Nestle
+1,Uht-milk,95.0,Amul
+2,Abrasive cleaner,435.0,Cif
+3,Artif. sweetener,120.0,Sugar free
+4,Baby cosmetics,362.0,Dettol
+5,Bags,465.0,Lankmark
+6,Baking powder,265.0,MDH
+7,Bathroom cleaner,216.0,Harpic
+8,Beef,182.0,Costa's
+9,Berries,252.0,Rivendell
+10,Beverages,305.0,Minute Maid
+11,Bottled beer,273.0,Budweiser
+12,Bottled water,62.0,Bisleri
+13,Brandy,143.0,Ossoro
+14,Brown bread,423.0,English Oven
+15,Butter,389.0,Amul
+16,Butter milk,464.0,Amul
+17,Cake bar,205.0,Cadbury
+18,Candles,491.0,Bella Vita Organic
+19,Candy,283.0,Cadbury
+20,Canned beer,280.0,Budweiser
+21,Canned fish,240.0,Costa's
+22,Canned fruit,159.0,Rivendell
+23,Canned vegetables,277.0,Ocean
+24,Cat food,106.0,Whiskas
+25,Cereals,413.0,Kellogg's
+26,Chewing gum,280.0,Nestle
+27,Chicken,312.0,Costa's
+28,Chocolate,435.0,Cadbury
+29,Chocolate marshmallow,253.0,Mars
+30,Citrus fruit,471.0,Rivendell
+31,Cleaner,212.0,Harpic
+32,Cling film/bags,343.0,Lankmark
+33,Cocoa drinks,71.0,Hershey's
+34,Coffee,476.0,Nescafe
+35,Condensed milk,206.0,Amul
+36,Cooking chocolate,107.0,Mars
+37,Cookware,124.0,Prestige
+38,Cream,139.0,Mother Dairy
+39,Cream cheese ,426.0,Mother Dairy
+40,Curd,473.0,Mother Dairy
+41,Curd cheese,351.0,Amul
+42,Decalcifier,100.0,Durgol
+43,Dental care,315.0,Colgate
+44,Dessert,266.0,Nestle
+45,Detergent,295.0,Rin
+46,Dish cleaner,283.0,Vim
+47,Dishes,150.0,Borosil
+48,Dog food,228.0,Whiskas
+49,Domestic eggs,437.0,Henfruit
+50,Female sanitary products,148.0,Whisper
+51,Finished products,57.0,Lankmark
+52,Fish,435.0,Costa's
+53,Flour,259.0,Aashirvaad
+54,Flower (seeds),457.0,True Basket
+55,Flower soil/fertilizer,237.0,TrustBasket
+56,Frankfurter,102.0,Springer
+57,Frozen chicken,437.0,Springer
+58,Frozen dessert,180.0,Cadbury
+59,Frozen fish,415.0,Springer
+60,Frozen fruits,433.0,Rivendell
+61,Frozen meals,361.0,Ocean's Secret
+62,Frozen potato products,189.0,MTR
+63,Frozen vegetables,113.0,Ocean's Secret
+64,Fruit/vegetable juice,183.0,Real
+65,Grapes,296.0,Fressco
+66,Hair spray,216.0,Set Wet
+67,Ham,412.0,Costa's
+68,Hamburger meat,461.0,Springer
+69,Hard cheese,460.0,Mother Dairy
+70,Herbs,378.0,Fressco
+71,Honey,278.0,Dabur
+72,House keeping products,451.0,Harpic
+73,Hygiene articles,301.0,Set Wet
+74,Ice cream,323.0,Mother Dairy
+75,Instant coffee,328.0,Nescafe
+76,Jam,464.0,Kissan
+77,Ketchup,478.0,Kissan
+78,Kitchen towels,470.0,Origami
+79,Kitchen utensil,470.0,Prestige
+80,Light bulbs,160.0,Philips
+81,Liqueur,226.0,Ocean
+82,Liquor,381.0,Budweiser
+83,Liquor (appetizer),414.0,Budweiser
+84,Liver loaf,194.0,Springer
+85,Long life bakery product,398.0,Hershey's
+86,Make up remover,197.0,Oriflame
+87,Male cosmetics,356.0,Set Wet
+88,Margarine,151.0,TSR
+89,Mayonnaise,107.0,Amul
+90,Meat,190.0,Costa's
+91,Meat spreads,345.0,Springer
+92,Misc. beverages,493.0,Minute Maid
+93,Mustard,480.0,Vedaka
+94,Napkins,332.0,Origami
+95,Newspapers,84.0,Origami
+96,Nut snack,464.0,True elements
+97,Nuts/prunes,315.0,True elements
+98,Oil,134.0,Aashirvaad
+99,Onions,226.0,Fressco
+100,Organic products,99.0,Fressco
+101,Organic sausage,192.0,Godrej
+102,Other vegetables,331.0,Fressco
+103,Packaged fruit/vegetables,268.0,Fressco
+104,Pasta,230.0,MTR
+105,Pastry,184.0,MTR
+106,Pet care,103.0,Whiskas
+107,Photo/film,300.0,Philips
+108,Pickled vegetables,389.0,MTR
+109,Pip fruit,167.0,Fressco
+110,Popcorn,383.0,Nestle
+111,Pork,74.0,Springer
+112,Pot plants,238.0,Origami
+113,Potato products,475.0,Sunfeast
+114,Preservation products,160.0,Fressco
+115,Processed cheese,380.0,Amul
+116,Prosecco,329.0,Bella Vita Organic
+117,Pudding powder,500.0,MTR
+118,Ready soups,129.0,MTR
+119,Red/blush wine,438.0,Budweiser
+120,Rice,490.0,Basmati
+121,Roll products,297.0,Origami
+122,Rolls/buns,316.0,Godrej
+123,Root vegetables,401.0,Ocean's Secret
+124,Rubbing alcohol,213.0,Blender Spride
+125,Rum,362.0,Ocean
+126,Salad dressing,76.0,MTR
+127,Salt,315.0,TATA
+128,Salty snack,74.0,Sunfeast
+129,Sauces,369.0,Kissan
+130,Sausage,201.0,True elements
+131,Seasonal products,148.0,TATA
+132,Semi-finished bread,403.0,English Oven
+133,Shopping bags,467.0,Lankmark
+134,Skin care,121.0,Oriflame
+135,Sliced cheese,185.0,TATA
+136,Snack products,483.0,Kissan
+137,Soap,268.0,Godrej
+138,Soda,165.0,TATA
+139,Soft cheese,114.0,Mother Dairy
+140,Softener,170.0,Ocean
+141,Soups,490.0,MTR
+142,Sparkling wine,250.0,Budweiser
+143,Specialty bar,85.0,True elements
+144,Specialty cheese,424.0,English Oven
+145,Specialty chocolate,414.0,Cadbury
+146,Specialty fat,150.0,Hershey's
+147,Specialty vegetables,495.0,Fressco
+148,Spices,262.0,TATA
+149,Spread cheese,81.0,Veeba
+150,Sugar,100.0,TATA
+151,Sweet spreads,452.0,Hershey's
+152,Syrup,135.0,Hershey's
+153,Tea,108.0,TATA
+154,Tidbits,411.0,Fressco
+155,Toilet cleaner,460.0,Harpic
+156,Tropical fruit,424.0,Fressco
+157,Turkey,130.0,Costa's
+158,Vinegar,469.0,MTR
+159,Waffles,103.0,Cadbury
+160,Whipped/sour cream,170.0,Amul
+161,Whisky,497.0,Blender Spride
+162,White bread,176.0,English Oven
+163,White wine,385.0,Blender Spride
+164,Whole milk,176.0,Mother Dairy
+165,Yogurt,496.0,Amul
+166,Zwieback,476.0,Sunfeast

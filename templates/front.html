@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrantonApprovedGoods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/front.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-to">Deliver to</p>
+                <div class="add-icon ">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="add-loc">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="" placeholder="Search" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-signin border">
+                <span class="registration"><a href="index.html">Sign in</a></p>
+                    <p>or</p>
+                    <span class="create"><a href="register.html">Create Account</a></span>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+
+        </div>
+        <div class="panel" >
+            <div class="panel-ops">
+                <div class="panel-items">
+                    <div class="item-type">
+                    
+                        <img src={{ url_for('static',filename='images/Grocery.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Grocery</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/Mobile.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Mobile</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/fashion.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">fashion</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/Electronics.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Electronics</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/Furniture.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Home & Furniture</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/Appliances.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Appliances</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/Travel.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Travel</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/toys.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Beauty, Toys & More</p>
+                    </div>
+                    <div class="item-type">
+                          <img src={{ url_for('static',filename='images/two_wheelers.webp') }} alt="" height="64px" width="64px">
+                        <p class="item-name">Two Wheelers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Start of the main section -->
+        <div class="products-section">
+
+        </div>
+    </main>
+</body>
+
+</html>
