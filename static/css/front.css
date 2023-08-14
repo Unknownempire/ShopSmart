@@ -22,7 +22,7 @@
 }
 .logo {
     /* margin-left: 10px; */
-    background-image: url{../images/flipkart.svg};
+    background-image: url(../images/flipkart.svg);
     /* background-image: url(../images/flipkart-icon.svg); */
     background-repeat: no-repeat;
     background-size: 100px 50px;
