@@ -1,0 +1,112 @@
+
+        /* Reset default margin/padding and set box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: #f4f4f4; */
+            background-color: #f1f3f6;
+        }
+        
+        .navbar {
+            background-color: #181433;
+            height: 56px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .navbar-logo {
+            /* font-size: 24px; */
+            /* font-weight: bold; */
+            margin-left: 10%;
+            color: #fff;
+        }
+        .navbar-logo img {
+            height: 40px;
+        }
+        
+        .navbar-search {
+            flex-grow: 1;
+            margin: 0 20px;
+            width: 150px;
+        }
+        .navbar-search input {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+        }
+        .navbar-user {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-user .account-dropdown {
+            position: relative;
+            margin-right: 20px;
+        }
+        .navbar-user .account-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .navbar-user .account-dropdown:hover .account-dropdown-content {
+            display: block;
+        }
+        .navbar-user .account-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar-user .account-dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .navbar-user a {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .cart-item img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .cart-item .item-details {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .cart-total {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .cart-item button {
+            justify-content: end;
+            margin-top: 5%;
+        }
+        
