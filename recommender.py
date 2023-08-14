@@ -181,13 +181,13 @@ class Recommender :
         
 
         # Testing Purpose
-        # def getUserOrderHistory(self,userId):
-        #     orderHistory = self.orderDetails.loc[self.orderDetails['uid'] == userId].values.tolist()
-        #     return orderHistory
+    def getUserOrderHistory(self,userId):
+        orderHistory = self.orderDetails.loc[self.orderDetails['uid'] == userId].values.tolist()
+        return orderHistory
     
-        # def getUserBrowseHistory(self,userId):
-        #     browseHistory = self.browserHistory.loc[self.browserHistory['uid'] == userId].values.tolist()
-        #     return browseHistory
+    def getUserBrowseHistory(self,userId):
+        browseHistory = self.browserHistory.loc[self.browserHistory['uid'] == userId].values.tolist()
+        return browseHistory
         
 
 import pickle
