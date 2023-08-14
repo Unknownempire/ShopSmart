@@ -140,3 +140,12 @@ a:hover {
     justify-content:space-evenly;
     padding: 1% 0;
 }
+
+/* ------------------------Recommendation section-------------------------------- */
+
+#browsed_product, #recommendations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
