@@ -148,4 +148,15 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+
+/*---------------------- Cart button-------------------------------------------- */
+#cartButton{
+    position: sticky;  
+    bottom: 10vh;
+    left: 100vw;
+    background-color: white;
 }
