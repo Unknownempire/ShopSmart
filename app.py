@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify,render_template
 
+# from Recommender1 import Recommender
 from recommender import Recommender
 import os
+import random
 
 app = Flask(__name__)
 
@@ -18,37 +20,38 @@ with open("recommender_pickel.txt",'rb') as f:
 # JS calls Flask, Flask me routes h jisme we send recommendations, update/insert/edit dataset ( jaha pe bhi wo hosted h )
 REC = Recommender()
 
-
-# @app.route('/productRecommendation', methods=['GET'])
-# def getRecommendations():
-#     if request.method == 'GET':
-#         userId = request.args.get('userId')
-#         if userId != None:
-#             recommendations = REC.getProductRecommendation(int(userId))
-#         print(recommendations)
-#         return jsonify(recommendations)
-
-
-# @app.route('/getProductList', methods=['GET'])
-# def getProductList():
-#     if request.method == 'GET':
-#         return jsonify(REC.productList)
+userId = random.randint(1,500)
+print('userid = ', userId)
+@app.route('/productRecommendation', methods=['GET'])
+def getRecommendations():
+    if request.method == 'GET':
+        # userId = request.args.get('userId')
+        if userId != None:
+            recommendations = REC.calculate_product_Recommendation(int(userId))
+        # print(recommendations)
+        return jsonify(recommendations)
 
 
-# @app.route('/getUserOrderHistory', methods=['GET'])
-# def getUserOrderHistory():
-#     if request.method == 'GET':
-#         userId = request.args.get('userId')
-#         orderHist = REC.getUserOrderHistory(int(userId))
-#         return jsonify(orderHist)
+@app.route('/getProductList', methods=['GET'])
+def getProductList():
+    if request.method == 'GET':
+        return jsonify(REC.productList)
 
 
-# @app.route('/getUserBrowseHistory', methods=['GET'])
-# def getUserBrowseHistory():
-#     if request.method == 'GET':
-#         userId = request.args.get('userId')
-#         browseHist = REC.getUserBrowseHistory(int(userId))
-#         return jsonify(browseHist)
+@app.route('/getUserOrderHistory', methods=['GET'])
+def getUserOrderHistory():
+    if request.method == 'GET':
+        # userId = request.args.get('userId')
+        orderHist = REC.getUserOrderHistory(int(userId))
+        return jsonify(orderHist)
+
+
+@app.route('/getUserBrowseHistory', methods=['GET'])
+def getUserBrowseHistory():
+    if request.method == 'GET':
+        # userId = request.args.get('userId')
+        browseHist = REC.getUserBrowseHistory(int(userId))
+        return jsonify(browseHist)
 
 
 @app.route('/')
