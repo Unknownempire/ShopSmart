@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import fuzz
 import time
 import datetime
-
+# import matplotlib.pyplot as plt
 class Recommender :
     def __init__(self):
         self.orderDetails = self.get_order_details()
@@ -132,6 +132,7 @@ class Recommender :
         print(np.corrcoef(productXAttributes))
 
         corrcoef = np.corrcoef(productXAttributes)
+
         return corrcoef
 
     def calculate_product_Recommendation(self,user_id):
@@ -189,7 +190,11 @@ class Recommender :
         browseHistory = self.browserHistory.loc[self.browserHistory['uid'] == userId].values.tolist()
         return browseHistory
         
+#     data = pd.read_csv("TemporaryMatrix.csv", delimiter = ",")
 
+# # Display the image using imshow
+#     plt.imshow(data)  # Use a colormap appropriate for your data
+#     plt.show()
 import pickle
 with open('recommender_pickel.txt','wb') as f:
     pickle.dump(Recommender,f)
