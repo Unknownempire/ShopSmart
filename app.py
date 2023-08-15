@@ -20,8 +20,9 @@ with open("recommender_pickel.txt",'rb') as f:
 # JS calls Flask, Flask me routes h jisme we send recommendations, update/insert/edit dataset ( jaha pe bhi wo hosted h )
 REC = Recommender()
 
-userId = random.randint(1,500)
-print('userid = ', userId)
+# userId = random.randint(1,500)
+# print('userid = ', userId)
+userId=46
 @app.route('/productRecommendation', methods=['GET'])
 def getRecommendations():
     if request.method == 'GET':
