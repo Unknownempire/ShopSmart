@@ -145,18 +145,31 @@ a:hover {
 
 #browsed_product, #recommendations {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     padding: 25px;
     margin-bottom: 15px;
+    border: 2px solid red;
+    background-color: #f3f3f3;
+    margin-top: 5px;
+    gap: 20px;
 }
+
+.products-section{
+    margin-bottom: 5px;
+}
+
+.browsed_items, .recommended_items {
+    border: 2px solid green;
+}
+
+.sub-heading {
+    margin: 10px 0;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
 
 
 /*---------------------- Cart button-------------------------------------------- */
-#cartButton{
-    position: sticky;  
-    bottom: 10vh;
-    left: 100vw;
-    background-color: white;
-}
