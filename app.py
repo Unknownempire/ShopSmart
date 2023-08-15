@@ -67,6 +67,10 @@ def index():
 def front():
     return render_template('front.html')
 
+@app.route('/cart')
+def cart():
+    return render_template('cart.html')
+
 PORT = int(os.environ.get('PORT', 5000))
 
 if __name__ == '__main__':
