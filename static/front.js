@@ -10,9 +10,27 @@ function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHi
         let newdiv = document.createElement("div")
         newdiv.className = 'browsed_items'
         styling_div(newdiv);
-        newdiv.innerHTML = `<img src="./images/ ${element[1].jpg}></img>"
-                            <p>${element[1]}</p><p>${element[2]}</p>`;
+       
+
+
         browsed_product.append(newdiv);
+        let img = document.createElement("img");
+        img.src =`../static/images/` + element[1]+`.jpg`
+        img.className="browsed_product_img"
+        // Use the image URL provided by Flask
+        img.alt = element[1]+" img";
+
+        newdiv.appendChild(img);
+
+
+        // Create paragraphs for text content
+        let p1 = document.createElement("p");
+        p1.textContent = element[1];
+        let p2 = document.createElement("p");
+        p2.textContent = element[2];
+        // Append the text paragraphs to the new div
+        newdiv.appendChild(p1);
+        newdiv.appendChild(p2);
 
             // console.log(element[1])
     });
@@ -34,10 +52,31 @@ fetch('http://127.0.0.1:5000/productRecommendation')
             let newdiv = document.createElement("div")
             newdiv.className = 'recommended_items'
             styling_div(newdiv);
-            newdiv.innerHTML = `<img src="./images/${element[1]}" height: 100px width: 100px>
-                                <p>${element[1]}</p>
-                                <p> Brand : ${element[3]}</p>
-                                <p>Price : ${element[2]}</p>`;
+         
+
+        let img = document.createElement("img");
+        img.src =`../static/images/` + element[1]+`.jpg`
+        img.className="recommendation_img"
+        // Use the image URL provided by Flask
+        img.alt = element[1]+" img";
+
+        newdiv.appendChild(img);
+
+
+        // Create paragraphs for text content
+        let p1 = document.createElement("p");
+        p1.textContent = element[1];
+        let p2 = document.createElement("p");
+        p2.textContent = element[2];
+        let p3 = document.createElement("p");
+        p3.textContent = element[3];
+        // Append the text paragraphs to the new div
+        newdiv.appendChild(p1);
+        newdiv.appendChild(p3);
+        newdiv.appendChild(p2);
+
+
+
             recommendations.appendChild(newdiv);
             // console.log(element[1])
         });
@@ -52,4 +91,3 @@ function styling_div(div) {
     div.style.width = '20vw';
     div.style.height = '20vh'
 }
-
