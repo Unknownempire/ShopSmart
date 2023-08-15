@@ -95,14 +95,15 @@
     <main>
         <!-- Start of the main section -->
         <div class="products-section">
-            <div id="browsed_product"></div>
-            <div id="recommendations"></div>
+            <h2 class="sub-heading">Suggested Items</h2>
+            <div id="browsed_product">
+            </div>
+
+            <h2 class="sub-heading">Recommendations</h2>
+            <div id="recommendations">
+            </div>
 
         </div>
-        <button id="cartButton">
-            Add to Cart
-        </button>
-
     </main>
     <script src={{ url_for('static',filename='front.js') }}></script>
 </body>
