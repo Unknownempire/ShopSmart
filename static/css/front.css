@@ -173,11 +173,16 @@ a:hover {
     font-size: 20px;
 }
 .browsed_product_img {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 60%;
     width:50%
 }
-
+.recommendation_img{
+    margin-top: 1px;
+    border:2px solid black;
+    height: 60%;
+    width:60%;
+}
 
 
 
