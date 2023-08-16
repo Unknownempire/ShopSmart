@@ -152,10 +152,11 @@ a:hover {
     text-align: center;
     padding: 25px;
     margin-bottom: 15px;
-    border: 2px solid red;
+    /* border: 1px solid red; */
     background-color: #f3f3f3;
     margin-top: 5px;
     gap: 20px;
+    box-shadow:-2px 3px 10px #9a9494;
 }
 
 
@@ -164,7 +165,7 @@ a:hover {
 }
 
 .browsed_items, .recommended_items {
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .sub-heading {
@@ -178,9 +179,16 @@ a:hover {
     width:50%
 }
 .recommendation_img{
-    margin-top: 1px;
-    border:2px solid black;
-    height: 60%;
+    /* display:block; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* margin-top: 1px; */
+    margin: 2px auto;
+    /* border:2px solid black; */
+    height: 70%;
     width:60%;
 }
 
