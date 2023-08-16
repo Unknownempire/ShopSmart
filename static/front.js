@@ -64,15 +64,15 @@ fetch('http://127.0.0.1:5000/productRecommendation')
 
 
         // Create paragraphs for text content
-        let p1 = document.createElement("p");
+        let p1 = document.createElement("span");
         p1.textContent = element[1];
         let p2 = document.createElement("p");
-        p2.textContent = element[2];
-        let p3 = document.createElement("p");
-        p3.textContent = element[3];
+        p2.textContent = '₹ ' + element[2];
+        let p3 = document.createElement("span");
+        p3.textContent = element[3] + " ";
         // Append the text paragraphs to the new div
-        newdiv.appendChild(p1);
         newdiv.appendChild(p3);
+        newdiv.appendChild(p1);
         newdiv.appendChild(p2);
 
 
