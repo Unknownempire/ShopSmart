@@ -47,18 +47,28 @@ class user_similarity :
         # ans = recommended_items.drop(columns=['value'])
         ans = recommended_items.index[0:5].tolist()
 
-        product_csv=pd.read_csv('products.csv')
-        filtered_data = product_csv[product_csv['pid'].astype(str).isin(ans)]
+        #changing list of strings to list of integer
+        for i in range(0, len(ans)):
+            ans[i] = int(ans[i])
+ 
 
-        selected_columns = ['product_name', 'price', 'brand']
-        filtered_data = filtered_data[selected_columns]
+        product_csv=pd.read_csv('products.csv')
+        # filtered_data = product_csv[product_csv['pid'].astype(str).isin(ans)]
+        filtered_data = product_csv.loc[product_csv['pid'].isin(ans)].values.tolist()
+
+        # selected_columns = ['product_name', 'price', 'brand']
+        # filtered_data = filtered_data[selected_columns]
 
         # print(ans)
         # print("--------Filter Data------")
-        filtered_data.reset_index(drop=True, inplace=True)  # Reset the index
+        # filtered_data.reset_index(drop=True, inplace=True)  # Reset the index
 
-        print(filtered_data.to_string(index=False))  # Setting index=False to not display the index
-        return(filtered_data.to_string(index=False))
+        # print(filtered_data.to_string(index=False))  # Setting index=False to not display the index
+        print('filtered_data = ',filtered_data)
+        # print(product_csv)
+        print(ans)
+        # return(filtered_data.to_string(index=False))
+        return filtered_data
         # return ans
 
 
