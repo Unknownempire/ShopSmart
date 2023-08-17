@@ -14,8 +14,16 @@
     align-items: center;
     /* justify-content: space-around; */
     justify-content: center;
-    
+    /* position: sticky;
+    top: 0;
+    width: 100%; */
 }
+/* .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+} */
 .nav-logo {
     margin: 0 1rem;
     width: 105px;
