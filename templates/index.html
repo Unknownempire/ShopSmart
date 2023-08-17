@@ -12,18 +12,18 @@
         <form action="">
             <h1>Login</h1>
             <div class="Login">
-                <input type="text" placeholder="User name" required>
+                <input type="text" id="userName" placeholder="User name" required onblur="getVal()">
             </div>
             <div class="Login">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="pass" placeholder="Password" required onblur="getpass()">
             </div>
             <div class="show">
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" onclick="show()">
                     Show Password
                 </label>
             </div>
-            <button type="submit" class="button">
+            <button type="submit" class="button" id="checkLogin" onclick="checkLogin()">
                 Login
             </button>
             <div class="register_link">
@@ -33,6 +33,7 @@
 
         </form>
     </div>
+    <script src={{ url_for('static',filename='index.js') }}></script>
     
 </body>
 </html>
