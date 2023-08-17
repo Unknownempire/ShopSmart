@@ -20,6 +20,18 @@ function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHi
         // Use the image URL provided by Flask
         img.alt = element[1]+" img";
 
+        function handleImageError() {
+            if (!imageLoaded) {
+            imageLoaded = true;
+            img.src =`../static/images/` + element[1]+`.webp`
+            console.log("image source change")
+            }
+        }
+        img.addEventListener('error', handleImageError);
+        img.addEventListener('load', () => {
+            imageLoaded = true;
+        });
+
         newdiv.appendChild(img);
 
 
@@ -110,3 +122,14 @@ function styling_div(div) {
     div.style.width = '20vw';
     div.style.height = '20vh'
 }
+
+// const navbar = document.querySelector('.navbar');
+// let top = navbar.offsetTop;
+// function stickynavbar() {
+//   if (window.scrollY >= top) {    
+//     navbar.classList.add('sticky');
+//   } else {
+//     navbar.classList.remove('sticky');    
+//   }
+// }
+// window.addEventListener('scroll', stickynavbar);
