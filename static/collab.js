@@ -19,7 +19,7 @@ function user_similarity() {fetch('http://127.0.0.1:5000/UserSim')
          // Use the image URL provided by Flask
         let imageLoaded = false; // Add a flag to track whether the image has loaded successfully
         img.alt = element[1]+" img";
-        
+       
         function handleImageError() {
             if (!imageLoaded) {
             imageLoaded = true;
@@ -27,6 +27,10 @@ function user_similarity() {fetch('http://127.0.0.1:5000/UserSim')
             // console.log("image source change")
             }
         }
+        if(element[1]=='Rolls/buns'){
+            img.src=`../static/images/Rolls_buns.webp`
+        }
+
         img.addEventListener('error', handleImageError);
         img.addEventListener('load', () => {
             imageLoaded = true;
@@ -52,7 +56,7 @@ function user_similarity() {fetch('http://127.0.0.1:5000/UserSim')
 
 
 
-            recommendations.appendChild(newdiv);
+        user_recom.appendChild(newdiv);
             // console.log(element[1])
         });
     })
