@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify,render_template
 
 # from Recommender1 import Recommender
 from recommender import Recommender
+from NewRecommendation import user_similarity
 import os
 import random
 
@@ -19,7 +20,7 @@ with open("recommender_pickel.txt",'rb') as f:
     
 # JS calls Flask, Flask me routes h jisme we send recommendations, update/insert/edit dataset ( jaha pe bhi wo hosted h )
 REC = Recommender()
-
+User_Simi=user_similarity()
 # userId = random.randint(1,500)
 # print('userid = ', userId)
 userId=46
@@ -54,6 +55,17 @@ def getUserBrowseHistory():
         browseHist = REC.getUserBrowseHistory(int(userId))
         return jsonify(browseHist)
 
+@app.route('/UserSim', methods=['GET'])
+def UserSim():
+        if request.method == 'GET':
+        # userId = request.args.get('userId')
+            if userId != None:
+                us=User_Simi.get_Recommendation(int(userId))
+        # print(recommendations)
+            return jsonify(us)
+        # userId = request.args.get('userId', type=int)  # Get userId from request arguments
+        # us=User_Simi.get_Recommendation(userId)
+        # return jsonify(us)
 
 @app.route('/')
 def register():
