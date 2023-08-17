@@ -7,7 +7,7 @@ function getpass() {
   const val = document.getElementById('pass').value;
   console.log(val);
 }
-getpass();
+//getpass();
 
 function show() {
     let x = document.getElementById('pass')
@@ -19,14 +19,14 @@ function show() {
 }
 
 function checkLogin() {
-  const userName = document.getElementById('userName').value;
-  const pass = document.getElementById('pass').value;
-  console.log(userName, pass);
+  let userName = document.getElementById('userName')
+  let pass = document.getElementById('pass')
+  console.log(userName.value, pass.value);
 
-//   if(userName == 46 && pass == 46) {
-//     alert("Welcome");
-//   } else {
-//     alert("Wrong password or login id")
-//   }
+  if(userName.value && pass.value) {
+    alert("Welcome");
+  } else {
+    alert("Wrong password or login id")
+  }
 }
 
