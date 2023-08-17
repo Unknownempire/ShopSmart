@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/cart.css') }}">
-    <title>E-commerce Site with Navbar</title>
+    <title>ScrantonApprovedGoods</title>
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-logo"><img src="fk.png" alt="logo"></div>
+        <div class="navbar-logo">
+            <!-- <img src="fk.png" alt="logo"> -->
+            <img src={{ url_for('static',filename='images/flipkart.svg') }} alt="" height="101px" width="84px">
+        </div>
         <div class="navbar-search">
             <input type="text" placeholder="Search for products, brands and more...">
         </div>
         <div class="navbar-user">
             <div class="account-dropdown">
-                <a href="#">My Account</a>
+                <a href="front">My Account</a>
                 <div class="account-dropdown-content">
                     <a href="#">My Profile</a>
                     <a href="#">Orders</a>
@@ -28,26 +31,28 @@
     <div class="container">
         <h1>Your Cart</h1>
         <div class="cart-item">
-            <img src="ocean.jpg" alt="ocean">
+            <!-- <img src="ocean.jpg" alt="ocean"> -->
+            <img src={{ url_for('static',filename='images/ocean.jpg') }} alt="" height="64px" width="64px">
             <div class="item-details">
                 <h3>Bombay Sapphire</h3>
-                <p>Price: $18</p>
+                <p>Price: ₹3190</p>
                 <p>Quantity: 1</p>
                 <button>Remove</button>
             </div>
         </div>
         <div class="cart-item">
-            <img src="maggi.jpg" alt="maggi">
+            <!-- <img src="maggi.jpg" alt="maggi"> -->
+            <img src={{ url_for('static',filename='images/maggi.jpg') }} alt="" height="64px" width="64px">
             <div class="item-details">
                 <h3>Maggi Noodles</h3>
-                <p>Price: $10</p>
+                <p>Price: ₹12</p>
                 <p>Quantity: 4</p>
                 <button>Remove</button>
             </div>
         </div>
         <div class="cart-total">
-            <h2>Total: $58</h2>
-            <button>Checkout</button>
+            <h2>Total: ₹3202</h2>
+            <button>Place Order</button>
         </div>
     </div>
 </body>
