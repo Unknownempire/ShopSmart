@@ -47,6 +47,21 @@ class user_similarity :
         # ans = recommended_items.drop(columns=['value'])
         ans = recommended_items.index[0:5].tolist()
 
-        print(ans)
-        return ans
-    # get_Recommendation(46)
+        product_csv=pd.read_csv('products.csv')
+        filtered_data = product_csv[product_csv['pid'].astype(str).isin(ans)]
+
+        selected_columns = ['product_name', 'price', 'brand']
+        filtered_data = filtered_data[selected_columns]
+
+        # print(ans)
+        # print("--------Filter Data------")
+        filtered_data.reset_index(drop=True, inplace=True)  # Reset the index
+
+        print(filtered_data.to_string(index=False))  # Setting index=False to not display the index
+        return(filtered_data.to_string(index=False))
+        # return ans
+
+
+
+# User_Simi = user_similarity()
+# User_Simi.get_Recommendation(46)

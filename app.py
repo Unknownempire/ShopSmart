@@ -58,14 +58,9 @@ def getUserBrowseHistory():
 @app.route('/UserSim', methods=['GET'])
 def UserSim():
         if request.method == 'GET':
-        # userId = request.args.get('userId')
             if userId != None:
                 us=User_Simi.get_Recommendation(int(userId))
-        # print(recommendations)
             return jsonify(us)
-        # userId = request.args.get('userId', type=int)  # Get userId from request arguments
-        # us=User_Simi.get_Recommendation(userId)
-        # return jsonify(us)
 
 @app.route('/')
 def register():

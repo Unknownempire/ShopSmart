@@ -80,7 +80,7 @@ fetch('http://127.0.0.1:5000/productRecommendation')
             if (!imageLoaded) {
             imageLoaded = true;
             img.src =`../static/images/` + element[1]+`.webp`
-            console.log("image source change")
+            // console.log("image source change")
             }
         }
         img.addEventListener('error', handleImageError);
