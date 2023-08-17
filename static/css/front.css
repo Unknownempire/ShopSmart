@@ -153,7 +153,7 @@ a:hover {
 
 /* ------------------------Recommendation section-------------------------------- */
 
-#browsed_product, #recommendations {
+#browsed_product, #recommendations,#collab_recommendations {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
