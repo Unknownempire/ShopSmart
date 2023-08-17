@@ -14,9 +14,9 @@
     align-items: center;
     /* justify-content: space-around; */
     justify-content: center;
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    width: 100%; */
+    width: 100%;
 }
 /* .sticky {
     position: sticky;
