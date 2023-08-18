@@ -126,6 +126,48 @@ a:hover {
     font-size: 0.85rem;
     font-weight: 700;
 }
+/* _________________________________Image-Slider_____________________________________ */
+/* Slideshow container */
+.mySlides {display: none;}
+.slideshow-container {
+    width: 450px;
+    height: auto; 
+    margin: auto;
+    margin-top: 50px;
+  }
+  .slideshow-container  img {
+    /* width: 200px; */
+    height: 250px;
+    vertical-align: middle;
+}
+
+    
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;  
+  }
+  .active{
+    background-color: #717171;
+
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 
 
