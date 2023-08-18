@@ -155,7 +155,7 @@ a:hover {
 
 #browsed_product, #recommendations,#collab_recommendations {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     text-align: center;
     padding: 25px;
@@ -165,6 +165,11 @@ a:hover {
     margin-top: 5px;
     gap: 20px;
     box-shadow:-2px 3px 10px #9a9494;
+    overflow: scroll;
+    white-space: nowrap;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -199,7 +204,7 @@ a:hover {
     margin: 5px auto;
     /* border:2px solid black; */
     height: 70%;
-    width:60%;
+    width:80%;
     border-radius: 4px;
 }
 
