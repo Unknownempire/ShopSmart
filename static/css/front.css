@@ -200,7 +200,7 @@ a:hover {
     width:60%;
 }
 
-#browsed_product_img:hover, #recommendations_img:hover {
+.browsed_product_img :hover,.recommendation_img:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: transform 0.15s ease-in-out;
