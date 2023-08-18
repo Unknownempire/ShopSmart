@@ -26,7 +26,7 @@ The system provides users with tailored product suggestions based on their prefe
 
 ## Screenshots
 
-![App Sc](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Login Page](./templates/images/loginpage.jpg)
 
 
 ## Installation
