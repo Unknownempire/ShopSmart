@@ -28,6 +28,9 @@ The system provides users with tailored product suggestions based on their prefe
 
 ![Login Page](./static/images/loginpage.jpg)
 
+## Project Summary
+For those who prefer a summary, you can view the [PDF](https://drive.google.com/file/d/1_lmog69Zh_wi5W1yYbltZhvVcQPL3-6r/view?usp=sharing) document that provides more insights into the project.
+
 
 ## Installation
 
