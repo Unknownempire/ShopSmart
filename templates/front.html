@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/front.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/front.css') }}">
 </head>
 
 <body>
@@ -45,51 +45,59 @@
             <div class="nav-cart border">
                 <a href="cart">
 
-                <i class="fa-solid fa-cart-shopping"></i>
-                Cart
-            </a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </a>
 
             </div>
 
         </div>
-        <div class="panel" >
+        <div class="panel">
             <div class="panel-ops">
                 <div class="panel-items">
                     <div class="item-type">
-                    
-                        <img src={{ url_for('static',filename='images/Grocery.webp') }} alt="" height="64px" width="64px">
+
+                        <img src={{ url_for('static',filename='images/Grocery.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Grocery</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/Mobile.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/Mobile.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Mobile</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/fashion.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/fashion.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">fashion</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/Electronics.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/Electronics.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Electronics</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/Furniture.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/Furniture.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Home & Furniture</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/Appliances.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/Appliances.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Appliances</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/Travel.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/Travel.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Travel</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/toys.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/toys.webp' ) }} alt="" height="64px" width="64px">
                         <p class="item-name">Beauty, Toys & More</p>
                     </div>
                     <div class="item-type">
-                          <img src={{ url_for('static',filename='images/two_wheelers.webp') }} alt="" height="64px" width="64px">
+                        <img src={{ url_for('static',filename='images/two_wheelers.webp' ) }} alt="" height="64px"
+                            width="64px">
                         <p class="item-name">Two Wheelers</p>
                     </div>
                 </div>
@@ -113,9 +121,30 @@
 
         </div>
     </main>
-    <script src={{ url_for('static',filename='front.js') }}></script>
-    <script src={{ url_for('static',filename='collab.js') }}></script>
-    
+    <script src={{ url_for('static',filename='front.js' ) }}></script>
+    <script src={{ url_for('static',filename='collab.js' ) }}></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Your JavaScript code here
+            window.onscroll = function () {
+                myFunction();
+            };
+
+            var navbar = document.querySelector(".navbar");
+            var sticky = navbar.offsetTop;
+              function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        })
+
+    </script>
+
+
 </body>
 
 </html>
