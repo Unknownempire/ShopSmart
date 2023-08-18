@@ -184,7 +184,9 @@ a:hover {
 .browsed_product_img {
     /* background-color: aqua; */
     height: 60%;
-    width:50%
+    /* width:50%; */
+    border-radius: 4px;
+
 }
 .recommendation_img{
     /* display:block; */
@@ -198,6 +200,7 @@ a:hover {
     /* border:2px solid black; */
     height: 70%;
     width:60%;
+    border-radius: 4px;
 }
 
 .browsed_product_img:hover,.recommendation_img:hover {
