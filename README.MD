@@ -6,12 +6,13 @@ The system provides users with tailored product suggestions based on their prefe
 
 ## Table of Contents
 
- - [Features](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Installation](https://github.com/matiassingers/awesome-readme)
- - [Usage](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-- [Technologies](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Contributing](https://github.com/matiassingers/awesome-readme)
- - [Contact](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Features](https://github.com/Unknownempire/UnknownFlip#features)
+ - [Snapshots](https://github.com/Unknownempire/UnknownFlip#screenshots)
+ - [Installation](https://github.com/Unknownempire/UnknownFlip#installation)
+ - [Usage](https://github.com/Unknownempire/UnknownFlip#usage)
+ - [Technologies](https://github.com/Unknownempire/UnknownFlip#technologies)
+ - [Contributing](https://github.com/Unknownempire/UnknownFlip#contributing)
+ - [Contact](https://github.com/Unknownempire/UnknownFlip#contact-us)
 
 
 ## Features
