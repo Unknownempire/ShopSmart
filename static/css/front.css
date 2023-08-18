@@ -194,7 +194,7 @@ a:hover {
     justify-content: center;
     /* text-align: center; */
     /* margin-top: 1px; */
-    margin: 2px auto;
+    margin: 5px auto;
     /* border:2px solid black; */
     height: 70%;
     width:60%;
@@ -216,13 +216,14 @@ a:hover {
 /*---------------------- Cart button-------------------------------------------- */
 
 .addToCart {
-  margin-left: 4.9rem;
+  margin: 0 auto;
   height: 20px;
   border-radius: 5px;
   /* width: 40px; */
   /* line-height: 60px; */
   font-weight: bold;
-  padding: 7%;
+  /* padding: 7%; */
+  padding: 20px;
   background: rgba(102, 215, 240, 0.921);
   border: none;
   display: flex;
