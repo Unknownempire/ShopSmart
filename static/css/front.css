@@ -203,6 +203,7 @@ a:hover {
 #browsed_product_img:hover, #recommendations_img:hover {
     transform: scale(1.1);
     cursor: pointer;
+    transition: transform 0.15s ease-in-out;
 }
 
 
