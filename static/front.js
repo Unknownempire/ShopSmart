@@ -135,8 +135,9 @@ fetch('http://127.0.0.1:5000/productRecommendation')
 function styling_div(div) {
     div.style.border = '2p solid green';
     div.style.maxWidth = '500px';
-    div.style.width = '20vw';
-    div.style.height = '20vh'
+    div.style.width = '250px';
+    div.style.height = '250px'
+    div.style.padding='34px'
 }
 
 // const navbar = document.querySelector('.navbar');
