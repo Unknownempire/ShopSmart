@@ -26,7 +26,7 @@ The system provides users with tailored product suggestions based on their prefe
 
 ## Screenshots
 
-![Login Page](./templates/images/loginpage.jpg)
+![Login Page](./static/images/loginpage.jpg)
 
 
 ## Installation
