@@ -20,6 +20,9 @@ function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHi
         // Use the image URL provided by Flask
         img.alt = element[1]+" img";
 
+        let imageLoaded = false; // Add a flag to track whether the image has loaded successfully
+        img.alt = element[1] + " img";
+
         function handleImageError() {
             if (!imageLoaded) {
             imageLoaded = true;
@@ -96,7 +99,7 @@ fetch('http://127.0.0.1:5000/productRecommendation')
               imageLoaded = true;
               if (element[1] == "Whipped/sour cream") {
                 console.log('jndvwb,cbd')
-                img.src = `../static/images/Whipped_sour_cream.jpeg`;
+                img.src = `../static/images/Whipped_sour_cream.png`;
               }else
               {
                 img.src = `../static/images/` + element[1] + `.png`;
