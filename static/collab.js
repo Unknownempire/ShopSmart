@@ -22,7 +22,7 @@ function user_similarity() {fetch('http://127.0.0.1:5000/UserSim')
           function handleImageError() {
             if (!imageLoaded) {
               imageLoaded = true;
-              img.src = `../static/images/` + element[1] + `.webp`;
+              img.src = `../static/images/` + element[1] + `.png`;
               // console.log("image source change")
             }
           }
