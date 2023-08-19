@@ -23,7 +23,7 @@ REC = Recommender()
 User_Simi=user_similarity()
 # userId = random.randint(1,500)
 # print('userid = ', userId)
-userId=46
+userId=851
 @app.route('/productRecommendation', methods=['GET'])
 def getRecommendations():
     if request.method == 'GET':
