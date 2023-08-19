@@ -1,4 +1,5 @@
  @import "compass/css3";
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
  body {
     box-sizing: border-box;
     min-height: 100vh;
@@ -6,11 +7,10 @@
     justify-content: center;
     align-items: center;
     background-image: url(../images/yellow_and_blue1.png);
-
-
+    font-family: 'Noto Sans';
     background-position: center;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .container {
@@ -28,6 +28,9 @@
     height: 50px;
     margin: 30px 0;
 }
+.Login ::placeholder{
+   color:black
+}
 .Login input {
     width: 100%;
     height: 100%;
@@ -41,6 +44,10 @@
 .Login input ::placeholder {
     color: #fff;
 }
+#checkLogin a{
+   text-decoration: none;
+   color:black;
+ }
 
 .show {
     display: flex;
