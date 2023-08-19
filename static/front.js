@@ -106,7 +106,7 @@ fetch('http://127.0.0.1:5000/productRecommendation')
               }
               
               if(element[1]=="Napkins"){
-                img.src = `../static/images/Napkins.png`;
+                img.src = `../static/images/Napkins.jpeg`;
               }
               
             }
