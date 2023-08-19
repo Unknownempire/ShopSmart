@@ -147,7 +147,7 @@ class Recommender :
                 pid = product[0]
                 
                 similarity = fuzz.token_set_ratio(browsed_item,pname)
-                if similarity > 76:
+                if similarity > 75:
                     similiar_products.append(pid)
         
         all_products_set = set()
