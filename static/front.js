@@ -94,14 +94,22 @@ fetch('http://127.0.0.1:5000/productRecommendation')
           function handleImageError() {
             if (!imageLoaded) {
               imageLoaded = true;
-              img.src = `../static/images/` + element[1] + `.png`;
-              // console.log("image source change")
+              if (element[1] == "Whipped/sour cream") {
+                console.log('jndvwb,cbd')
+                img.src = `../static/images/Whipped_sour_cream.jpeg`;
+              }else
+              {
+                img.src = `../static/images/` + element[1] + `.png`;
+              }
+              
+              if(element[1]=="Napkins"){
+                img.src = `../static/images/Napkins.png`;
+              }
+              
             }
           }
 
-          if (element[1] == "Whipped/sour cream") {
-            img.src = `../static/images/Whipped_sour_cream.jpeg`;
-          }
+         
 
           img.addEventListener("error", handleImageError);
           img.addEventListener("load", () => {
