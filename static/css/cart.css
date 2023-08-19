@@ -1,9 +1,12 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
         /* Reset default margin/padding and set box-sizing */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+
         }
         /* Basic styling */
         body {
@@ -119,3 +122,28 @@
             margin-top: 5%;
         }
         
+        button{
+            /* background: #F99F00; */
+            color: white;
+            border: none;
+            border-radius : 5px;
+            padding: 10px 15px;
+        }
+        .item {
+            background-color: rgb(239, 30, 30);
+        }
+        .order {
+            background-color: #038857;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            transition: transform 0.15s ease-in-out;
+        }
+        .order:hover {
+            box-shadow: 0px 0px 2px #00ffa1;
+        }
+        .item:hover {
+            box-shadow: 0px 0px 2px 0px rgb(233 15 15);
+        }
