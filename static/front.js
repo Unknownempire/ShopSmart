@@ -23,9 +23,13 @@ function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHi
         function handleImageError() {
             if (!imageLoaded) {
             imageLoaded = true;
-            img.src =`../static/images/` + element[1]+`.webp`
+            img.src =`../static/images/` + element[1]+`.png`
             console.log("image source change")
             }
+        }
+        console.log('img = ', element[1])
+        if (element[1] == "Whipped/sour cream") {
+          img.src = `../static/images/Whipped_sour_cream.png`;
         }
         img.addEventListener('error', handleImageError);
         img.addEventListener('load', () => {
@@ -90,7 +94,7 @@ fetch('http://127.0.0.1:5000/productRecommendation')
           function handleImageError() {
             if (!imageLoaded) {
               imageLoaded = true;
-              img.src = `../static/images/` + element[1] + `.webp`;
+              img.src = `../static/images/` + element[1] + `.png`;
               // console.log("image source change")
             }
           }
@@ -98,6 +102,10 @@ fetch('http://127.0.0.1:5000/productRecommendation')
           img.addEventListener("load", () => {
             imageLoaded = true;
           });
+
+          if (element[1] == "Whipped/sour cream") {
+            img.src = `../static/images/Whipped_sour cream`;
+          }
 
           newdiv.appendChild(img);
 
