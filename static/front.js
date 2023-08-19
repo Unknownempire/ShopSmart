@@ -42,7 +42,7 @@ function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHi
         p2.textContent = element[2];
         // Append the text paragraphs to the new div
         newdiv.appendChild(p1);
-        newdiv.appendChild(p2);
+        // newdiv.appendChild(p2);
 
         let add_to_cart = document.createElement("button");
         add_to_cart.className = "addToCart"
