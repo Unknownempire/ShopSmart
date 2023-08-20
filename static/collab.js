@@ -1,5 +1,5 @@
 let user_recom = document.getElementById('collab_recommendations')
-function user_similarity() {fetch('http://127.0.0.1:5000/UserSim') 
+function user_similarity() {fetch('https://shopsmart-cvl1.onrender.com/UserSim') 
     .then(response => response.json())
     .then(dataArray => {
         // console.log(dataArray)

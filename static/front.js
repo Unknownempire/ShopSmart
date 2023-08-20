@@ -1,7 +1,8 @@
 let browsed_product = document.getElementById('browsed_product');
 let recommendations = document.getElementById('recommendations');
 let cartButton =document.getElementById('cartButton')
-function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHistory')
+// function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHistory')
+function fetch_browsing_history () {fetch('https://shopsmart-cvl1.onrender.com/getUserBrowserHistory')
 .then(response => response.json())
 .then(dataArray => {
     // console.log(dataArray)
@@ -74,7 +75,8 @@ fetch_browsing_history();
 
 // console.log("---------------product recommendation------------")
 
-fetch('http://127.0.0.1:5000/productRecommendation') 
+// fetch('http://127.0.0.1:5000/productRecommendation') 
+fetch('https://shopsmart-cvl1.onrender.com/productRecommendation')
     .then(response => response.json())
     .then(dataArray => {
         // console.log(dataArray)
