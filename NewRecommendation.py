@@ -15,7 +15,8 @@ class user_similarity :
         data['productID'] = data['productID'].apply(lambda x: [f'{item.strip()}' for item in x.split(" ") if item.strip()])
 
 # Create a list of unique product names
-        all_products = set(item for sublist in data['productID'] for item in sublist)
+        # all_products = set(item for sublist in data['productID'] for item in sublist)
+        all_products = list(dict.fromkeys(item for sublist in data['productID'] for item in sublist))
 
 # Create a pivot table with product names as columns
         pivot_table = pd.DataFrame(columns=all_products, index=data['uid'])
