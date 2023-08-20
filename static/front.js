@@ -2,7 +2,7 @@ let browsed_product = document.getElementById('browsed_product');
 let recommendations = document.getElementById('recommendations');
 let cartButton =document.getElementById('cartButton')
 // function fetch_browsing_history () {fetch('http://127.0.0.1:5000/getUserBrowseHistory')
-function fetch_browsing_history () {fetch('https://shopsmart-cvl1.onrender.com/getUserBrowserHistory')
+function fetch_browsing_history () {fetch('https://shopsmart-cvl1.onrender.com/getUserBrowseHistory')
 .then(response => response.json())
 .then(dataArray => {
     // console.log(dataArray)
